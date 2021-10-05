@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import time
-driver=webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe")
+driver=webdriver.Chrome(executable_path="_PATH_")  #enter the path of your selenium chrome driver
 driver.get("https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fmeet.google.com%2Flanding%3Fauthuser%3D1&followup=https%3A%2F%2Fmeet.google.com%2Flanding%3Fauthuser%3D1&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
 print(driver.title)
 ele=driver.find_element_by_xpath("//*[@id='identifierId']")  # username

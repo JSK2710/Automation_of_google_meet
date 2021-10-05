@@ -9,19 +9,19 @@ print(driver.title)
 ele=driver.find_element_by_xpath("//*[@id='identifierId']")  # username
 print(ele.is_displayed())
 print(ele.is_enabled())
-ele.send_keys("19131a0369@gvpce.ac.in")
+ele.send_keys(" email ") #enter email id
 driver.find_element_by_xpath("//*[@id='identifierNext']/div/button/span").click()
 time.sleep(2)
 pwd=driver.find_element_by_xpath("//*[@id='password']/div[1]/div/div[1]/input")  # password
 print(pwd.is_displayed())
 print(pwd.is_enabled())
-pwd.send_keys("gvpcoe123")
+pwd.send_keys(" password ") # enter password
 driver.find_element_by_xpath("//*[@id='passwordNext']/div/button/span").click()
 time.sleep(2)
 driver.find_element_by_xpath("//*[@id='yDmH0d']/c-wiz/div/div[2]/div/div[2]/c-wiz/c-wiz/div[1]/div[1]/div/div[5]/c-wiz/div/c-wiz[1]/div").click()
 time.sleep(5)  # first class
 dismiss=driver.find_element_by_xpath("//*[@id='yDmH0d']/div[3]/div/div[2]/div[3]/div/span")  # dismiss
-if dismiss.is_displayed()==True:
+if dismiss.is_displayed():
     driver.find_element_by_xpath("//*[@id='yDmH0d']/div[3]/div/div[2]/div[3]/div/span").click()
 else:
     driver.find_element_by_xpath("//*[@id='yDmH0d']/div[3]/div/div[2]/div[3]/div/span").click()
